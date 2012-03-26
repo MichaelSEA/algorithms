@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 def mergesort(list)
   return list if list.size <= 1
   mid = list.size / 2
@@ -17,3 +19,5 @@ def merge(left, right)
   end
   sorted.concat(left).concat(right)
 end
+
+INPUT_FILE = 
