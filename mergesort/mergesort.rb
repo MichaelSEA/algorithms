@@ -23,7 +23,7 @@ def merge(left, right)
       sorted << left.shift
     else
       sorted << right.shift
-      @number_of_inversions += 1 # this is wrong. TODO: figure out num to add... (midArray - i)
+      @number_of_inversions += left.length
     end
   end
   sorted.concat(left).concat(right)
